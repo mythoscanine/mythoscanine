@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mythos Canine Dog Training</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --panel:#f9f7f6;
+      --accent:#a33b3b;
+      --muted:#3b0f0f;
+      --text:#2b2b2b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+
+    header{display:flex;align-items:center;gap:18px;padding:22px 28px;background:var(--accent);color:#fff}
+    .logo{display:flex;align-items:center;gap:14px}
+    .logo img{height:92px;width:auto;display:block;border-radius:12px}
+    .brand{display:flex;flex-direction:column}
+    .brand h1{font-family:'Bebas Neue',sans-serif;margin:0;color:#fff;font-size:2.2rem;line-height:1}
+    .brand p{margin:4px 0 0;color:#f5c3b0;font-size:0.95rem}
+
+    main{max-width:1100px;margin:26px auto;padding:0 18px}
+
+    .hero{background:var(--panel);padding:18px;border-radius:12px;display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .hero-left h2{font-size:1.6rem;color:var(--accent);margin:0}
+    .lead{color:var(--text);margin-top:12px;line-height:1.5}
+    .cta{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;padding:10px 14px;border-radius:9px;text-decoration:none;font-weight:600}
+
+    .hero-right{background:#fff;padding:14px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .meta{color:var(--accent);font-weight:600}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+    .service{background:#fff;padding:14px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .service h3{margin:0;color:var(--accent);font-size:1.05rem}
+    .service p{margin:8px 0 0;color:var(--text);font-size:0.94rem}
+
+    .about{background:var(--panel);padding:20px;border-radius:10px;margin-top:24px;line-height:1.6;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .about h2{color:var(--accent);margin-top:0;margin-bottom:10px}
+    .about-images{display:flex;justify-content:center;gap:16px;margin-top:16px;flex-wrap:wrap}
+    .about-images img{width:48%;min-width:280px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+
+    .test-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+    .testimonial{background:#fff;padding:16px;border-radius:10px;border-left:4px solid var(--accent);box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .testimonial p{margin:0 0 8px;line-height:1.45}
+    .who{font-weight:700;color:var(--accent);font-size:0.95rem}
+
+    .contact{margin-top:24px;background:var(--panel);padding:18px;border-radius:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    footer{margin-top:30px;padding:20px;text-align:center;color:var(--muted);border-top:1px solid rgba(0,0,0,0.05)}
+    .socials a{color:var(--accent);margin:0 8px;text-decoration:none;font-weight:600}
+    .socials a:hover{text-decoration:underline}
+    .signature{font-family:'Dancing Script',cursive;color:var(--accent);font-size:1.3rem;margin-top:6px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .test-grid{grid-template-columns:1fr}
+      header{padding:14px}
+      .logo img{height:80px}
+      .brand h1{font-size:1.6rem}
+      .about-images img{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="mythos_logo.png" alt="Mythos Canine logo">
+      <div class="brand">
+        <h1>Mythos Canine</h1>
+        <p>Dog Training — Coalville & Surrounds</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Training that builds trust, confidence and teamwork</h2>
+        <p class="lead">Science-based, welfare-focused training and behaviour support for puppies, reactive dogs and working partnerships. Practical plans you can follow, real results you can see.</p>
+        <a class="cta" href="mailto:mythoscanine@gmail.com">Book a free consult</a>
+
+        <div class="services" style="margin-top:18px">
+          <div class="service"><h3>Puppy Training</h3><p>Socialisation, early recall, life skills and household manners.</p></div>
+          <div class="service"><h3>Behaviour & Reactivity</h3><p>Tailored programmes for anxiety, reactivity and fear-based responses.</p></div>
+          <div class="service"><h3>Assistance Foundations</h3><p>Foundations for public access, task training and reliable routines.</p></div>
+          <div class="service"><h3>Scentwork & Obedience</h3><p>Mental stimulation and sport-oriented training for motivated dogs.</p></div>
+          <div class="service"><h3>Dog Walking</h3><p>Training walks or regular walks available, with enrichment at the forefront of every walk. Your dog goes home satisfied.</p></div>
+          <div class="service"><h3>Online Sessions</h3><p>Remote behaviour consultations and follow-up coaching.</p></div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="meta">Jake Dowling — Trainer</div>
+        <div style="margin-top:8px;">BSc Zoology, specialising in Canine Welfare • Evidence-based methods • Assistance & sport dog experience</div>
+        <div style="margin-top:12px"><a class="cta" href="mailto:mythoscanine@gmail.com">Enquire now</a></div>
+      </aside>
+    </section>
+
+    <section class="about">
+      <h2>About Me 🐾</h2>
+      <p>My name is Jake, I'm the trainer behind Mythos Canine! I have been obsessed with animals, mostly dogs, for as long as I can remember. I've been involved with training dogs and dog sports since I was 11 years old with my first dog Zoe.</p>
+      <p>As I grew that turned into a passion for helping dogs and their owners navigate their relationship together and the world around them! I've trained everything from various dog sports, to puppy foundations, reactivity and advanced working dogs. Including a fully trained assistance dog that I raised and trained for a friend of mine.</p>
+      <p>I also hold a BSc in Zoology with a specific focus on animal behaviour and canine welfare which I have just recently completed. Although education never ends!</p>
+      <p>I now live in the Coalville area with my own two dogs, Nimue the collie and Seoda the lagotto romagnolo. They absolutely keep me on my toes! My passion with my own dogs is agility, obedience and scentwork.</p>
+
+      <div class="about-images">
+        <img src="nimue_jump.jpg" alt="Nimue jumping during training">
+        <img src="nimue_seoda.jpg" alt="Nimue and Seoda together">
+      </div>
+
+      <p>My training approach is science-based and welfare-focused. You won't see any "quick fixes" or gimmicks with me. Just real training, guaranteed to give you lasting results and to set you and your dog up for a happy, fulfilled life together.</p>
+    </section>
+
+    <section class="about" style="margin-top:18px">
+      <h2>What clients say</h2>
+      <div class="test-grid">
+        <div class="testimonial">
+          <p>“When I first rescued Rocky, his anxiety made walks almost impossible — he was terrified of everything. Jake completely turned things around. After a six-week board and tailored training plan, Rocky now walks calmly, takes treats outside, and even plays with other dogs. It’s changed both our lives for the better.”</p>
+          <div class="who">— Jess & Rocky</div>
+        </div>
+        <div class="testimonial">
+          <p>“Milo spent two weeks with Jake for his training, and the difference he had made in such a short amount of time was amazing! He has helped with Milo’s lead walking, recall, confidence and most of all his separation anxiety! Can’t thank him enough for all his help and advice. Highly recommend!!”</p>
+          <div class="who">— Nicole & Milo</div>
+        </div>
+        <div class="testimonial">
+          <p>“Jake really helped with my puppy Forest and is always willing to give advice when I need it. I would highly recommend him & his training to everybody you won’t be disappointed.”</p>
+          <div class="who">— Poppy & Forest</div>
+        </div>
+        <div class="testimonial">
+          <p>“I have a working lab puppy, he’s my partner’s 7th and my 1st working dog... Without a shadow of a doubt 100 times over. He has given me my dog back and he’s helped us not only to be safe, but we totally enjoy our walks with our little man.”</p>
+          <div class="who">— Maria & Dely</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact & Bookings</h2>
+      <p>Email: <a href="mailto:mythoscanine@gmail.com">mythoscanine@gmail.com</a></p>
+      <p>Phone: 07584 860878</p>
+      <p style="color:var(--accent)">Based in Coalville — in-person & online sessions available</p>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <p>Follow Mythos Canine:</p>
+        <a href="https://www.facebook.com/profile.php?id=61580735559528" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/mythoscanine/" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@mythoscanine" target="_blank">TikTok</a>
+      </div>
+      <div>&copy; <span id="year"></span> Mythos Canine</div>
+      <div class="signature">Jake Dowling.</div>
+    </footer>
+  </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
